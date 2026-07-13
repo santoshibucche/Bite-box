@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "playfair display", sans-serif;
+}
+
+
+nav{
+ 
+    padding: 20px 40px 20px 40px;
+    background-color: black;
+    color: darkblue;
+
+   
+}
+
+nav div{
+     display: flex;
+    justify-content: space-between;
+    /* line k center me ayega */
+    align-items: center;
+    padding: 0;
+
+}
+
+ul{
+    display: flex;
+    /* dots nikal jayemnge */
+    list-style: none;
+    
+}
+
+li a{
+    /* list k content ko color diya */
+    color: lightgreen;
+    /* dono nam k bich me gap ajyegi */
+    padding: 10px;
+    /* text ki underline remove karne k liye use huA */
+    text-decoration: none;
+    /* TEXT thickness badega */
+    font-weight: 700;
+}
+
+/* hover krne k liye */
+nav a:hover{
+    color: pink;
+    /* background color laga skte hai or shadow bhi */
+    /* background-color: blueviolet; */
+    /* loading ya kuch bhi diff cursor dikhana hai vo dikha skte hai */
+    /* cursor: progress; */
+}
+
+nav li:last-child{
+    background-color: aquamarine;
+    padding: 5px 12px;
+    border-radius: 6px;
+}
+
+nav li:last-child a:hover{
+    background-color: red;
+    color: black;
+}
+
+/* sirf home ko style kiya */
+nav a.active{
+    color: lightpink;
+    font-weight: bold;
+    border-bottom: 2px solid navy;
+}
+
+div img{
+    padding-bottom: 1px;    
+    padding-top: 1px;
+
+}
+
+.hero{
+    height: 90vh;
+    background-image: url("/Bite-Box/images/bannerfood.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero button{
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: red;
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+
+.hero button:hover{
+    background-color: darkred;
+}
+
+.video-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 40px;
+}
+
+.video-text{
+    flex: 1;
+}
+
+.video-box{
+    flex: 1;
+}
+
+.video-box video{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-text h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.video-text p{
+    font-size: 18px;
+    color: #444;
+}
+
+
+/* about section */
+.about{
+    text-align: center;
+    padding: 60px 20px;
+    background: #f9f9f9;
+
+}
+
+.about h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: rgb(255, 0, 0, 0.616);
+}
+
+.about p{
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
