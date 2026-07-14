@@ -9,7 +9,7 @@
 nav{
  
     padding: 20px 40px 20px 40px;
-    background-color: black;
+    background-color:black;
     color: darkblue;
 
    
@@ -33,7 +33,7 @@ ul{
 
 li a{
     /* list k content ko color diya */
-    color: lightgreen;
+    color: rgb(255, 255, 255);
     /* dono nam k bich me gap ajyegi */
     padding: 10px;
     /* text ki underline remove karne k liye use huA */
@@ -44,7 +44,7 @@ li a{
 
 /* hover krne k liye */
 nav a:hover{
-    color: pink;
+    color: rgb(204, 66, 66);
     /* background color laga skte hai or shadow bhi */
     /* background-color: blueviolet; */
     /* loading ya kuch bhi diff cursor dikhana hai vo dikha skte hai */
@@ -52,21 +52,21 @@ nav a:hover{
 }
 
 nav li:last-child{
-    background-color: aquamarine;
+    background-color: rgb(239, 81, 81);
     padding: 5px 12px;
     border-radius: 6px;
 }
 
 nav li:last-child a:hover{
-    background-color: red;
-    color: black;
+    /* background-color: rgb(131, 15, 173); */
+    color: rgb(243, 216, 9);
 }
 
 /* sirf home ko style kiya */
 nav a.active{
-    color: lightpink;
+    color: rgb(255, 44, 44);
     font-weight: bold;
-    border-bottom: 2px solid navy;
+    border-bottom: 2px solid rgb(208, 228, 72);
 }
 
 div img{
@@ -153,4 +153,86 @@ div img{
     font-size: 18px;
     color: #555;
     line-height: 1.6;
+}
+
+/* menu card */
+.card{
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
+}
+
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.card button{
+    background-color: rgb(207, 0, 0);
+    color: azure;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: darkred;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.category-icons{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow: auto;
+    background: #fff;
+    justify-content: center;
+}
+
+.icon-box{
+    max-width: 100px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icon-box img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+    padding: 5px;
+    box-shadow: 0 4px 10px black;
+    /* margin-bottom: 15px; */
+}
+
+.icon-box p{
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.icon-box img:hover{
+    border-color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+
+.icon-box p:hover{
+    color: red;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
