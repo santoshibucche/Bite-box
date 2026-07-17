@@ -1,104 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="cart.css">
-    
-    <!-- <style>
-
-/* h1{
-    color: rebeccapurple;
-    background-color: yellow;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-p{
-      color: blue;
-}
-
-div{
-    height: 700px;
-    width: 700px;
-    background-color:aquamarine;
-    border: 3px solid black;
-
-}
-img{
-    height: 700px;
-    width: 700px;
-    border-radius: 50px;
-    border: 2px solid red;
-} */
-
-/* #head1{
-    color: blue;
-}
-#head2{
-    color: brown;
-}
-#box1{
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
-    border: 2px solid rgb(152, 105, 105);
-}
-#box2{
-    width: 100px;
-    height: 100px;
-    background-color: aquamarine;
-    border: 2px solid rgb(85, 93, 51);
-}
-
-.container{
-    border: 2px solid blueviolet;
-    color: yellow;
-    font-family: 'Times New Roman', Times, serif;
-    
-} */
-
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} */
-    </style> -->
-
-
-    <!-- <h1 id="head1">cart page</h1>
-    <h1 id="head2">itvedant</h1>
-
-    <div id="box1"></div>
-    <div id="box2"></div>
-
-
-    <div class="container">
-    <h3>Title 1</h3>
-    <h3>Title 2</h3>
-    <h3>Title 3</h3>
-    <h3>Title 4</h3>
-    </div> -->
-</head>
-<body>
-
-    <div id="box1">
-        <div id="child">
-
-              <p> Text </p>
-
-        </div>
-    </div>
-
-
-    <div id="box2">
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b411583990.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <nav>
         <div>
+          <!-- <h2>Bite<span style="color:red;">Box</span></h2> -->
+          <img
+            src="BiteBox_Bold_Food_Delivery_Logo-removebg-preview.png"
+            alt="logo"
+            width="70px"
+            height="60px"
+          />
 
+          <ul>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="bite-deal.html">Bite Deal</a></li>
+            <li>
+              <a href="cart.html"
+                >Cart<i class="fa-solid fa-cart-arrow-down"></i
+              ></a>
+            </li>
+            <li>
+              <a href="login.html"
+                >Login<i class="fa-solid fa-arrow-right-from-bracket"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-    </div>
+      </nav>
+    </header>
+    <!-- header end -->
 
+    <!-- start Cart section -->
+    <section class="cart"> <br><br>
+      <table>
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
 
-</body>
+        <tbody>
+          <tr>
+            <td class="item">
+              <img src="/Bite-Box/images/burger.jpg" alt="buger" />
+              <div>
+                <h4>Cheesy Burger</h4>
+                <p>fully loaded with cheese</p>
+              </div>
+            </td>
+
+            <td>₹199</td>
+            <td>
+              <div class="qty-box">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+              </div>
+            </td>
+            <td>₹199</td>
+            <td>
+              <button class="remove">❌</button>
+            </td>
+          </tr>
+          <tr class="grand-total">
+            <td colspan="3">Grand Total</td>
+            <td>₹199</td>
+            <td>
+              <button>Proceed</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="item">
+              <img src="/Bite-Box/images/hotdog.jpg" alt="buger" />
+              <div>
+                <h4>Hot Dog</h4>
+                <p>Grilled paneer</p>
+              </div>
+            </td>
+
+            <td>₹299</td>
+            <td>
+              <div class="qty-box">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+              </div>
+            </td>
+            <td>₹299</td>
+            <td>
+              <button class="remove">❌</button>
+            </td>
+          </tr>
+          <tr class="grand-total">
+            <td colspan="3">Grand Total</td>
+            <td>₹299</td>
+            <td>
+              <button>Proceed</button>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="item">
+              <img src="/Bite-Box/images/momo.jpg" alt="buger" />
+              <div>
+                <h4>Momos</h4>
+                <p>veg steam momos</p>
+              </div>
+            </td>
+
+            <td>₹199</td>
+            <td>
+              <div class="qty-box">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+              </div>
+            </td>
+            <td>₹299</td>
+            <td>
+              <button class="remove">❌</button>
+            </td>
+          </tr>
+          <tr class="grand-total">
+            <td colspan="3">Grand Total</td>
+            <td>₹399</td>
+            <td>
+              <button>Proceed</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </body>
 </html>
